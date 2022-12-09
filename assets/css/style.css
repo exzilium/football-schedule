@@ -1,22 +1,35 @@
 .topnav {
-    background-color: #003368;
-    overflow: hidden;
-   margin: 0;
-   text-align: center;
-    height: 60px;
-  }
-  
-  .topnav a {
-    float: none;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 17px 17px;
-    text-decoration: none;
-    font-size: 31px;
-  }
-  
-  .topnav a:hover {
-    background-color: #fbfdff;
-    color: black;
-  }
-  
+  background-color: #003368;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  height: 60px;
+}
+
+.topnav a {
+  float: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 31px;
+}
+
+.topnav a:hover {
+  background-color: #fbfdff;
+  color: black;
+}
+
+.matchups {
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.team-name {
+    margin-bottom: 2rem;
+}
+
+.scores {
+   margin-left: 2.5rem;
+}
