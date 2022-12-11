@@ -10,9 +10,10 @@ function printResults(resultObj) {
   // Week number
   var gameWeek = resultObj.week.number;
 
-  // Game header data
+  // Game general data
   var gameName = resultObj.name;
   var gameStatus = resultObj.status.type.shortDetail;
+  var gameSummaryLink = resultObj.links[0].href;
 
   // Team 1
   var gameTeam1Name = resultObj.competitions[0].competitors[0].team.displayName;
@@ -31,12 +32,27 @@ function printResults(resultObj) {
   console.log("Week " + gameWeek + " of 18");
   console.log(gameName);
   console.log(
-    gameTeam1Name + " " + gameTeam1Score + " logo link: " + gameTeam1Logo
+    gameTeam1HomeAway +
+      " " +
+      gameTeam1Name +
+      " " +
+      gameTeam1Score +
+      " logo link: " +
+      gameTeam1Logo
   );
   console.log(
-    gameTeam2Name + " " + gameTeam2Score + " logo link: " + gameTeam2Logo
+    gameTeam2HomeAway +
+      " " +
+      gameTeam2Name +
+      " " +
+      gameTeam2Score +
+      " logo link: " +
+      gameTeam2Logo
   );
   console.log(gameStatus);
+  console.log(gameTeam1Name + " win? " + gameTeam1Winner);
+  console.log(gameTeam2Name + " win? " + gameTeam2Winner);
+  console.log("Game Summary: " + gameSummaryLink);
 }
 
 // Get current scoreboard data for current week
