@@ -59,8 +59,15 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      console.log(data.events);
       printResults(data.events[0]);
+      
+      // For Each
+      data.events.forEach((element) => {
+        var gameTeam1Name = element.competitions[0].competitors[0].team.displayName;
+        console.log(element);
+        console.log(gameTeam1Name);
+      });
     });
 }
 
