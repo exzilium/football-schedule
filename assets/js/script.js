@@ -1,10 +1,3 @@
-//temp html variables to be replaced by bootstrapped frontend
-
-var gameHeaderHTML = document.querySelector("#header");
-var gameNameHTML = document.querySelector("#game");
-var gameTeam1HTML = document.querySelector("#team1");
-var gameTeam2HTML = document.querySelector("#team2");
-
 // Schedule function for current scoreboard data for current week
 function printResults(resultObj) {
   // Week number
@@ -65,8 +58,15 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      console.log(data.events);
       printResults(data.events[0]);
+      
+      // For Each
+      data.events.forEach((element) => {
+        var gameTeam1Name = element.competitions[0].competitors[0].team.displayName;
+        console.log(element);
+        console.log(gameTeam1Name);
+      });
     });
 }
 
