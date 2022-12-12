@@ -1,10 +1,3 @@
-//temp html variables to be replaced by bootstrapped frontend
-
-var gameHeaderHTML = document.querySelector("#header");
-var gameNameHTML = document.querySelector("#game");
-var gameTeam1HTML = document.querySelector("#team1");
-var gameTeam2HTML = document.querySelector("#team2");
-
 // Schedule function for current scoreboard data for current week
 function printResults(resultObj) {
   // Week number
@@ -70,4 +63,10 @@ function getApi() {
     });
 }
 
+// Display today's date in header
+
+var todaysDate = dayjs().format('MMM D, YYYY');
+$("#today").text(todaysDate);
+
+// get API data upon page load
 getApi();

@@ -2,6 +2,7 @@
   background-color: #003368;
   overflow: hidden;
   margin: 0;
+  padding-top: 20px;
  justify-content: center;
   height: auto;
   display: flex;
@@ -19,6 +20,11 @@
 .topnav a:hover {
   background-color: #fbfdff;
   color: black;
+}
+
+.topnav h5 {
+    padding: 10px 10px;
+    color: #f2f2f2;
 }
 
 .matchups {
