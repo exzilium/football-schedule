@@ -31,8 +31,8 @@
   display: grid;
   text-align: center;
   align-items: center;
-  height: 175px;
- background-color: rgb(217, 217, 217); */
+
+ background-color: rgb(217, 217, 217); 
 }
 
 .team-name {
@@ -52,4 +52,9 @@
 }
 .row{
   height: 100%;
+}
+
+.myrow {
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 10px;
 }
