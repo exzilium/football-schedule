@@ -3,9 +3,9 @@
   overflow: hidden;
   margin: 0;
   padding-top: 20px;
- justify-content: center;
+ text-align: center;
   height: auto;
-  display: flex;
+  display: block;
 }
 
 .topnav a {
@@ -23,8 +23,9 @@
 }
 
 .topnav h5 {
-    padding: 10px 10px;
     color: #f2f2f2;
+    padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .matchups {
