@@ -11,46 +11,75 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
     crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+ <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+  </head>
 <body>
+  <nav class="topnav">
+    <a href="#Schedule">Schedule</a>
+    <a href="#Standings">Standings</a>
+    <a href="#Stats">Stats</a>
+    <h5><span id="week-number"></span>&nbsp&nbsp-&nbsp&nbsp<span id="today"></span></h5>
+  </nav>
     <section class="standings container">
+      <h2>NFC East</h2>
         <table class="table ">
-            <thead class="thead-dark">
+            <thead class="thead-light">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Team</th>
-                <th scope="col">Win</th>
-                <th scope="col">Loss</th>
+                <th scope="col">W</th>
+                <th scope="col">L</th>
+                <th scope="col">T</th>
+                <th scope="col">Pct</th>
+                <th scope="col">PF</th>
+                <th scope="col">PA</th>
+                <th scope="col">Home</th>
+                <th scope="col">Away</th>
+                <th scope="col">Strk</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>Eagles</td>
+                <td>12</td>
+                <td>1</td>
+                <td>0</td>
+                <td>.923</td>
+                <td>386</td>
+                <td>248</td>
+                <td>6-1</td>
+                <td>6-0</td>
+                <td>W4</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>Eagles</td>
+                <td>12</td>
+                <td>1</td>
+                <td>0</td>
+                <td>.923</td>
+                <td>386</td>
+                <td>248</td>
+                <td>6-1</td>
+                <td>6-0</td>
+                <td>W4</td>
               </tr>
             </tbody>
           </table>
+          <h2>NFC West</h2>
+
 
 
 
 
 
     </section>
-    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -61,5 +90,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/nav_script.js"></script>
+    <script src="./assets/js/standings_script.js"></script>
 </body>
 </html>
