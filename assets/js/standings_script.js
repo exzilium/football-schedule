@@ -19,7 +19,7 @@ function getStandings() {
   var standingsURLAFCSouth =
     "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2022/types/2/groups/13/standings/0?lang=en&region=us";
 
-    // -- NFC --
+  // -- NFC --
   // NFC EAST groups/1
   var standingsURLNFCEast =
     "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2022/types/2/groups/1/standings/0?lang=en&region=us";
@@ -44,7 +44,7 @@ function getStandings() {
       // standings data example
       console.log(standingsData);
       // for each item in standings array get team URL
-      standingsData.standings.forEach((element) => {
+      standingsData.standings.forEach((element, i) => {
         // get team url from standings data
         var teamURL = element.team.$ref;
         console.log(teamURL);
@@ -54,13 +54,42 @@ function getStandings() {
             return response.json();
           })
           .then(function (teamData) {
-            // team example data
-            console.log(teamData.shortDisplayName);
-            console.log(teamData.logos[0].href);
-            console.log(teamData);
-            var j = 0;
-            // record example data (need help to traverse into the object/arrays)
-            console.log(standingsData.standings[element]);
+
+            // Variables for team name and stats to create html
+            
+            // Team Name
+            var teamName = teamData.shortDisplayName;
+            console.log(teamName);
+            // Team logo url
+            var teamLogo = teamData.logos[0].href;
+            console.log(teamLogo);
+            // Wins
+            var teamWins = element.records[0].stats[18].displayValue;
+            console.log(teamWins);
+            // Losses
+            var teamLosses = element.records[0].stats[10].displayValue;
+            console.log(teamLosses);
+            // Ties
+            var teamTies = element.records[0].stats[16].displayValue;
+            console.log(teamTies);
+            // Winning percentage
+            var teamPCT = element.records[0].stats[17].displayValue;
+            console.log(teamPCT);
+            // Points For
+            var teamPF = element.records[0].stats[14].displayValue;
+            console.log(teamPF);
+            // Points Against
+            var teamPA = element.records[0].stats[13].displayValue;
+            console.log(teamPA);
+            // Points Against
+            var teamPA = element.records[0].stats[15].displayValue;
+            console.log(teamPA);
+            // Home Record
+            var teamHomeRecord = element.records[1].displayValue;
+            console.log(teamHomeRecord);
+            // Away Record
+            var teamAwayRecord = element.records[2].displayValue;
+            console.log(teamAwayRecord);
           });
       });
     });
