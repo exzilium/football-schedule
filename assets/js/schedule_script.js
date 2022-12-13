@@ -1,18 +1,8 @@
 // Container for appending game info such as "teams" "scores" "schedules" etc.
 var scheduleContainer = document.querySelector(".games-container");
 
-// Display today's date in header
-var todaysDate = dayjs().format("MMM D, YYYY");
-$("#today").text(todaysDate);
-
-// Display current week number in header
-function printWeek(weekNumber) {
-  $("#week-number").text("Week " + weekNumber + " of 18");
-}
-
 // variable for use in "for each" function below
 let html = "";
-
 
 // Get current scoreboard data for current week
 function getApi() {
