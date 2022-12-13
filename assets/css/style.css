@@ -3,7 +3,7 @@
   overflow: hidden;
   margin: 0;
   padding-top: 20px;
- justify-content: center;
+  justify-content: center;
   height: auto;
   display: flex;
 }
@@ -14,7 +14,6 @@
   padding: 17px 17px;
   text-decoration: none;
   font-size: 31px;
-  
 }
 
 .topnav a:hover {
@@ -23,8 +22,8 @@
 }
 
 .topnav h5 {
-    padding: 10px 10px;
-    color: #f2f2f2;
+  padding: 10px 10px;
+  color: #f2f2f2;
 }
 
 .matchups {
@@ -32,29 +31,49 @@
   text-align: center;
   align-items: center;
 
- background-color: rgb(217, 217, 217); 
+  background-color: rgb(217, 217, 217);
 }
 
 .team-name {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .scores {
-   margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
-.middle{
+.middle {
   padding-top: 15px;
 }
 
-.logo{
+.logo {
   height: 200px;
 }
-.row{
+.row {
   height: 100%;
 }
 
 .myrow {
   border-bottom: 3px solid #ccc;
   margin-bottom: 10px;
+}
+/* Fav button CSS */
+.fav-btn {
+  background-color: #003368;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.fav-btn:hover {
+  background-color: #94a6ba;
+}
+.card-deck{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.card{ 
+  width: 23%;
+  border: none;
+  box-shadow: 0 2px 3px 0 rgba(152, 152, 152, 0.2);
 }
