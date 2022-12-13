@@ -79,3 +79,6 @@
   border: none;
   box-shadow: 0 2px 3px 0 rgba(152, 152, 152, 0.2);
 }
+.team-logo{
+  max-height: 200px;
+}
