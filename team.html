@@ -19,45 +19,67 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
-    <title>Stats</title>
+    <title>Teams</title>
   </head>
   <body>
     <nav class="topnav">
       <a href="index.html">Schedule</a>
       <a href="stand.html">Standings</a>
       <a href="team.html">Teams</a>
-      <h5><span id="week-number"></span>&nbsp&nbsp-&nbsp&nbsp<span id="today"></span></h5>
-    </nav> 
-    <div class="card-deck">
+      <h5>
+        <span id="week-number"></span>&nbsp&nbsp-&nbsp&nbsp<span
+          id="today"
+        ></span>
+      </h5>
+    </nav>
+    <div id="card-container" class="row">
+      <div class="col-sm-4">
         <div class="card">
-          <img class="team-logo" src="..." alt="Card image cap">
+          <img class="team-logo" src="#" alt="Card image cap" />
           <div class="card-body">
-            <h5 class="team-name">Card title</h5>
+            <h5 class="team-name">Raiders</h5>
             <p class="team-stats">Some stats</p>
-            <button id="#favorite-button" class="fav-btn btn-primary">Favorite</button>
-          </div>
-        </div>
-        <div class="card">
-          <img class="team-logo" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="team-name">Card title</h5>
-            <p class="team-stats">Some stats</p>
-            <button id="#favorite-button" class="fav-btn btn-primary">Favorite</button>
-          </div>
-        </div>
-        <div class="card">
-          <img class="team-logo" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="team-name">Card title</h5>
-            <p class="team-stats">Some stats</p>
-            <button id="#favorite-button" class="fav-btn btn-primary">Favorite</button>
+            <button id="favorite-button" class="fav-btn btn-primary">Favorite</button>
           </div>
         </div>
       </div>
-      
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-      <script
+    </div>
+
+    <!-- CARD DECK OPTION -->
+    <!-- <div id="card-container" class="card-deck">
+        <div class="card">
+          <img class="team-logo" src="#" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="team-name">49ers</h5>
+            <p class="team-stats">Some stats</p>
+            <button id="favorite-button" class="fav-btn btn-primary">Favorite</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="team-logo" src="#" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="team-name">Rams</h5>
+            <p class="team-stats">Some stats</p>
+            <button id="favorite-button" class="fav-btn btn-primary">Favorite</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="team-logo" src="#" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="team-name">Card title</h5>
+            <p class="team-stats">Some stats</p>
+            <button id="favorite-button" class="fav-btn btn-primary">Favorite</button>
+          </div>
+        </div>
+      </div> -->
+
     <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
