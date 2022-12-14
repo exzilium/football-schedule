@@ -74,16 +74,12 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
-.card-deck{
-  display: flex;
-  justify-content: space-evenly;
-  padding: 30px;
-}
-.card{ 
-  width: 23%;
-  border: none;
-  box-shadow: 0 2px 3px 0 rgba(152, 152, 152, 0.2);
-}
 .team-logo{
   max-height: 200px;
+}
+/* Team logo small - team cards */
+
+.team-logo-sm{
+  max-width: 100px;
+  height: auto;
 }
