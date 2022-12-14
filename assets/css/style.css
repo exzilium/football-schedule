@@ -8,6 +8,13 @@
   display: block;
 }
 
+.topnav h1 {
+  color: #F2F2F2;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
 .topnav a {
   float: none;
   color: #f2f2f2;
