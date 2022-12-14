@@ -68,6 +68,12 @@
 .fav-btn:hover {
   background-color: #94a6ba;
 }
+.fav-btn-favorited {
+  background-color: #6695bb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 .card-deck{
   display: flex;
   justify-content: space-evenly;
